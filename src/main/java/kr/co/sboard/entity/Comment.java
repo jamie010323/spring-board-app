@@ -36,6 +36,7 @@ public class Comment {
                 .content(content)
                 .writer(writer)
                 .regip(regip)
+                .wdate(wdate.toString())
                 .build();
     }
 }
