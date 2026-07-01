@@ -1,9 +1,6 @@
 package kr.co.sboard.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import kr.co.sboard.dto.TermsDTO;
 import lombok.*;
 
@@ -13,6 +10,7 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 @Entity
+@Table(name = "terms")
 public class Terms {
 
     @Id
@@ -21,7 +19,6 @@ public class Terms {
     private String basic;
     private String privacy;
 
-
     public TermsDTO toDTO(){
         return TermsDTO.builder()
                 .no(no)
@@ -29,4 +26,5 @@ public class Terms {
                 .privacy(privacy)
                 .build();
     }
+
 }

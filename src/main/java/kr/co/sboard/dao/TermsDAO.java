@@ -1,6 +1,5 @@
 package kr.co.sboard.dao;
 
-import kr.co.sboard.dto.ArticleDTO;
 import kr.co.sboard.dto.TermsDTO;
 import org.apache.ibatis.annotations.Mapper;
 

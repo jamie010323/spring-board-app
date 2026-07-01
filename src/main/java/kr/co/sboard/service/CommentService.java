@@ -2,9 +2,7 @@ package kr.co.sboard.service;
 
 import kr.co.sboard.dao.ArticleDAO;
 import kr.co.sboard.dao.CommentDAO;
-import kr.co.sboard.dto.ArticleDTO;
 import kr.co.sboard.dto.CommentDTO;
-import kr.co.sboard.repository.ArticleRepository;
 import kr.co.sboard.repository.CommentRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
